@@ -1,0 +1,45 @@
+index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-3</title>
+     <link rel="stylesheet" href="style.css">
+     <script>
+     function getdata(){
+    var Name = document.getElementById('name');
+    var Value =  Name.value;
+    document.getElementById('msg').innerText=" Welcome " + Value + " ... ";
+}</script>
+</head>
+<body style="background-color: burlywood;"> 
+  <p id="msg"></p>
+    <div class="output">
+        Name :-
+        <input type="text" placeholder="Enter Name" id="name" >
+        <button type="submit" name="submit" onclick="getdata()">submit</button>
+    </div>
+   
+     <script src="script.js"></script>
+</body>
+</html>
+
+
+
+style.css
+
+
+.output{
+    text-align: center;
+    font-weight: bold;
+}
+#msg{
+    text-align: center;
+    font-weight: bold;
+     color: black;
+}
+
+
